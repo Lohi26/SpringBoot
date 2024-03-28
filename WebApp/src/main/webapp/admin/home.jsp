@@ -7,13 +7,13 @@
 <title>Insert title here</title>
 </head>
 <body>
-City : ${obj.city}
+	City : ${obj.city}
+	<br>
 	Id : ${obj.id}
 	<br>
 	Name : ${obj.name}
 	<br>
 	Year : ${obj.year}
 	<br>
-	
 </body>
 </html>
