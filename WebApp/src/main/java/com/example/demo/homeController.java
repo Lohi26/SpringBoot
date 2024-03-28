@@ -12,6 +12,7 @@ public class homeController
 		ModelAndView mv=new ModelAndView();
 		mv.addObject("obj", newclass);
 		mv.setViewName("home");
+		System.out.println("Compiled....Successfully....");
 		return mv;
 		//passing the entire object using dependency injection
 	}

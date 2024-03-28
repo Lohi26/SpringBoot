@@ -5,7 +5,7 @@ public class NewClass {
 	private int id;
 	private String name;
 	private int year;
-	private String city;
+	private String Mycity;
 	public int getId() {
 		return id;
 	}
@@ -25,10 +25,10 @@ public class NewClass {
 		this.year = year;
 	}
 	public String getCity() {
-		return city;
+		return Mycity;
 	}
 	public void setCity(String city) {
-		this.city = city;
+		this.Mycity = city;
 	}
 	
 }
