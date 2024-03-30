@@ -17,15 +17,15 @@
 	</style>
 </head>
 <body>
-	<form class="container">
+	<form class="container" action="addNothing">
 		<label>Id: </label>
-		<input type=number>
+		<input type=number name="id">
 		<br>
 		<label>Name: </label>
-		<input type="text">
+		<input type="text" name="name">
 		<br>
 		<label>City: </label>
-		<input type="text">
+		<input type="text" name="city">
 		<br>
 		<input type="submit"> 
 	</form>
