@@ -1,1 +1,1 @@
-insert into nothing (id, city, name) values (271, 'Sanjay Karthik', 'United States');
+insert into nothing (id, name, city) values (271, 'Sanjay Karthik', 'United States');

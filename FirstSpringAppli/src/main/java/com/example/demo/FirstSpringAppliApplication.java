@@ -9,7 +9,7 @@ public class FirstSpringAppliApplication {
 
 	public static void main(String[] args) {
 		ConfigurableApplicationContext context=SpringApplication.run(FirstSpringAppliApplication.class, args);
-		Something some=new Something();
+		Something some=context.getBean(Something.class);
 		some.show();
 	}
 
