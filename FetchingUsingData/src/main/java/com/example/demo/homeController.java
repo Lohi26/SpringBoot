@@ -37,6 +37,7 @@ public class homeController {
 		System.out.println(detailRepo.findByIdGreaterThanEqual(204));
 		System.out.println(detailRepo.findByName("Sanjay"));
 		System.out.println(detailRepo.findByDisplayAll(201));
+		System.out.println(detailRepo.findByWhereId(206));
 		return mv;
 		
 	}

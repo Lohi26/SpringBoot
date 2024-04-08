@@ -12,4 +12,7 @@ public interface DetailRepo extends CrudRepository<Details,Integer> {
 	List<Details> findByName(String name);
 	@Query(value="select * from details",nativeQuery=true)
 	List<Details> findByDisplayAll(int id);
+	
+	@Query(value="select * from details where id=?",nativeQuery=true)
+	List<Details> findByWhereId(int id);
 }
