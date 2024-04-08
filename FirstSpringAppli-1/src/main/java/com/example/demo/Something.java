@@ -12,7 +12,7 @@ public class Something {
 	public Something()
 	{
 		super();
-		System.out.println("Object Created");
+		System.out.println("Object Created and Compiled");
 	}
 	public int getId() {
 		return id;
