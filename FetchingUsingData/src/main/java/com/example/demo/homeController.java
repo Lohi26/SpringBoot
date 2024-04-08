@@ -32,7 +32,11 @@ public class homeController {
 	{
 		ModelAndView mv=new ModelAndView("show");
 		Details detail=detailRepo.findById(id).orElse(new Details());
-		mv.addObject("detail",detail);
+		mv.addObject("detail", detail);
+		System.out.println(detailRepo.findByNameOrder("Lohita"));
+		System.out.println(detailRepo.findByIdGreaterThanEqual(204));
+		System.out.println(detailRepo.findByName("Sanjay"));
+		System.out.println(detailRepo.findByDisplayAll(201));
 		return mv;
 		
 	}
