@@ -36,7 +36,7 @@
 		<input type="submit">
 	</form>
 	
-	<form action="getFormDetails">
+	<form action="/getFormDetails">
 		<label>Id:</label>
 		<input type="number" name="id">
 		<br>
