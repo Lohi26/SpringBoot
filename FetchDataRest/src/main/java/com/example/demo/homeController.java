@@ -30,7 +30,7 @@ public class homeController {
 		return "home";
 	}
 	
-	@RequestMapping(path="forms",produces= {"application/json"})
+	@RequestMapping("forms")
 	@ResponseBody
 	public  List<Formdetails> getFormDetails() {
 	    return  formRepo.findAll();

@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 //import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
@@ -25,13 +26,14 @@ public class homeController {
 	}
 	
 	@PostMapping("placement")
+	//If you use raw raw to post the data then use @RequestBody annotation
 	public Placement addPlacement(Placement placement)
 	{
 		placementRepo.save(placement);
 		return placement;
 	}
 	
-	@RequestMapping(path="placement")
+	@RequestMapping("placement")
 	@ResponseBody
 	public List<Placement> getPlacement(){
 		return placementRepo.findAll();
