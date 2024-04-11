@@ -27,6 +27,14 @@ public class homeController
 		return "home";
 	}
 	
+	
+	@PostMapping("knowledge")
+	public Knowledge addKnowledge(Knowledge knowledge)
+	{
+		knowledgeRepo.save(knowledge);
+		return knowledge;
+	}
+	
 	@DeleteMapping("knowledge/{id}")
 	public String delete(@PathVariable int id)
 	{
@@ -37,13 +45,6 @@ public class homeController
 	
 	@PutMapping("knowledge")
 	public Knowledge updateKnowledge(@RequestBody Knowledge knowledge)
-	{
-		knowledgeRepo.save(knowledge);
-		return knowledge;
-	}
-	
-	@PostMapping("knowledge")
-	public Knowledge addKnowledge(Knowledge knowledge)
 	{
 		knowledgeRepo.save(knowledge);
 		return knowledge;
