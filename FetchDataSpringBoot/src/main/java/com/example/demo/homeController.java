@@ -18,6 +18,7 @@ public class homeController {
 		{
 			System.out.println("compiled...successfully");
 			return "home";
+			
 		}
 		
 		@RequestMapping("/home1")
@@ -33,7 +34,6 @@ public class homeController {
 			ModelAndView mv=new ModelAndView("get");
 			Stranger strange=stranger.findById(id).orElse(new Stranger());
 			mv.addObject(strange);
-			return mv;
-			
+			return mv;	
 		}
 }

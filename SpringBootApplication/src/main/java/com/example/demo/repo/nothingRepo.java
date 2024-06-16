@@ -5,5 +5,5 @@ import com.example.demo.newClass.Nothing;
 
 
 public interface nothingRepo extends CrudRepository<Nothing,Integer>{
-
+	
 }
