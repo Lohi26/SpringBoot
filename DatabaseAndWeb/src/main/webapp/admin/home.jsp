@@ -31,7 +31,12 @@
 		<label>Gender: </label>
 		<input type="text" name="gender">
 		<br>
-		<input type="submit"> 
+		<input type="submit" class="submitting" id="submitting"> 
 	</form>
+	<script>
+		document.getElementById('submitting').addEventListener('click', function(){
+	        alert("Email Sent Successfully!!!");
+	    });
+	</script>
 </body>
 </html>
